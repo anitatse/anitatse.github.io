@@ -1,6 +1,6 @@
 .header {
   font-size: 40px;
-  line-height: 45px;
+  line-height: 38px;
   font-family: 'Sarabun', sans-serif;
   font-weight: 300;
   padding-left: 40px;
@@ -17,19 +17,48 @@
   padding-right: 40px;
 }
 
+.footer {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 body {
   background-color: #faf2f7;
 }
 
-img {
-  border-radius: 30px;
-  border: 8px solid #f0dde5;
+.space {
+  padding: 50px;
 }
 
-img.center {
+.headshot {
+  border-radius: 30px;
+  border: 8px solid #f0dde5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.icon {
 display: block;
-margin-left: auto;
-margin-right: auto;
+float: left;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+img.icon:hover {
+  transition: all 0.3s ease;
+  position: relative;
+  top: -3px;
+}
+
+.icon-row {
+   width: 100%;
+   padding: 30px;
 }
 
 #left-panel {

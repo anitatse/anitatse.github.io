@@ -24,7 +24,7 @@
    border-radius: 30px;
    border: 8px solid #f0dde5;
    font-size: 16px;
-   background-image: url("cardbackground.jpg");
+   background-image: url("images/cardbackground.jpg");
    transition: all 0.3s ease;
    position: relative;
    display: flex;
