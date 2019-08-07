@@ -22,13 +22,6 @@
    align-items: center;
 }
 
-@media screen and (max-width: 950px) {
-   .row {
-      flex-direction: column;
-      height: 300px;
-   }
-}
-
 .card {
    width: 100%;
    max-width: 400px;
