@@ -6,26 +6,26 @@
    padding: 0 4%;
    margin: 0 auto;
    display: flex;
-   justify-content: center;
+   justify-content: center;  */
    align-items: center;
 }
 
 @media screen and (max-width: 950px) {
    .row {
       flex-direction: column;
+      height: 300px;
    }
 }
 
 .card {
    width: 100%;
-   max-width: 430px;
+   max-width: 400px;
    min-width: 300px;
    height: 260px;
    margin: 20px;
    border-radius: 30px;
-   border: 8px solid #f0dde5;
+   border: 6px solid #f0dde5;
    font-size: 16px;
-   background-image: url("images/cardbackground.jpg");
    transition: all 0.3s ease;
    position: relative;
    display: flex;
@@ -34,6 +34,15 @@
    flex-direction: column;
    cursor: pointer;
    transition: all 0.3s ease;
+   background-size: cover;
+}
+
+#card-1 {
+  background-image: url("../images/nwplus.jpeg");
+}
+
+#card-2 {
+  background-image: url("../images/icon.png");
 }
 
 .card .title {
@@ -41,10 +50,10 @@
    margin: 0;
    text-align: center;
    font-size: 25px;
-   margin-top: 30px;
+   /* margin-top: 20px; */
    color: black;
    font-family: 'Sarabun', sans-serif;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 .card .subtitle {
@@ -56,32 +65,42 @@
    color: black;
    font-family: 'Sarabun', sans-serif;
    font-weight: 300;
+   padding: 10px;
+}
+
+.card .a {
+  text-decoration: none;
 }
 
 .card .text {
-   width: 80%;
-   margin: 0 auto;
-   font-size: 15px;
+   width: 100%;
+   margin: 0;
    text-align: center;
-   margin-top: 20px;
+   font-size: 18px;
    color: black;
    font-family: 'Sarabun', sans-serif;
    font-weight: 300;
    opacity: 0;
-   max-height:0;
-   transition: all 0.3s ease;
+   display: none;
+   padding: 10px;
 }
 
 .card:hover {
    height: 280px;
 }
 
-.card:hover .info {
-   height: 90%;
-}
-
 .card:hover .text {
    transition: all 0.3s ease;
+   display: inline;
    opacity: 1;
-   max-height:40px;
+}
+
+.card:hover .subtitle {
+  transition: all 0.3s ease;
+  display:none;
+}
+
+.card:hover .title {
+  transition: all 0.3s ease;
+  display:none;
 }
