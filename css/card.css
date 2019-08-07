@@ -1,4 +1,16 @@
 
+#card-1 {
+  background-image: url("../images/nwplus.jpeg");
+}
+
+#card-2 {
+  background-image: url("../images/algorhythms.jpg");
+}
+
+#card-3 {
+  background-image: url("../images/insightubc.jpeg");
+}
+
 .row {
    max-width: 1024px;
    height: 300px;
@@ -37,14 +49,6 @@
    background-size: cover;
 }
 
-#card-1 {
-  background-image: url("../images/nwplus.jpeg");
-}
-
-#card-2 {
-  background-image: url("../images/icon.png");
-}
-
 .card .title {
    width: 100%;
    margin: 0;
@@ -64,8 +68,9 @@
    margin-top: 10px;
    color: black;
    font-family: 'Sarabun', sans-serif;
-   font-weight: 300;
-   padding: 10px;
+   font-weight: 400;
+   padding-left: 10px;
+   padding-right: 10px;
 }
 
 .card .a {
@@ -79,7 +84,7 @@
    font-size: 18px;
    color: black;
    font-family: 'Sarabun', sans-serif;
-   font-weight: 300;
+   font-weight: 400;
    opacity: 0;
    display: none;
    padding: 10px;
