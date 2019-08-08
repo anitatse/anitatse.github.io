@@ -102,7 +102,7 @@ body {
 @media screen and (max-width: 800px) {
    #left-panel2 {
       position:relative;
-      width: 100%;
+      width: 0%;
       float: left;
       overflow-y: hidden;
       display: none;
