@@ -13,7 +13,8 @@ iframe {
 .header {
   font-size: 40px;
   line-height: 50px;
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
+  /* font-family: 'Sarabun', sans-serif; */
   font-weight: 300;
   padding-left: 40px;
   padding-right: 40px;

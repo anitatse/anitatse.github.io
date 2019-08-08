@@ -14,12 +14,10 @@
   margin-right: auto;
 }
 
-.banner-text .header {
-  padding-top: 80px;
-  line-height: 40px;
-  align-self: left;
+.container .header {
+  font-size: 46px;
 }
 
-.banner-texts .subheader {
-  align-self: left;
+.container .subheader {
+
 }
