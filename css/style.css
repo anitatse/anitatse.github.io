@@ -70,6 +70,14 @@ iframe {
   border-right: 4px solid #f0dde5;
 }
 
+#left-panel2 {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  overflow-y: scroll;
+  border-right: 4px solid #f0dde5;
+}
+
 #right-panel {
   float: right;
   width: 70%;
@@ -88,6 +96,16 @@ body {
       width: 100%;
       float: left;
       overflow-y: hidden;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   #left-panel2 {
+      position:relative;
+      width: 100%;
+      float: left;
+      overflow-y: hidden;
+      display: none;
    }
 }
 

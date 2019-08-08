@@ -7,6 +7,10 @@
   font-weight: 300;
 }
 
+#leftnav {
+    float:left;
+}
+
 .topnav {
   background-color: #fff7fc;
   position: fixed;
@@ -15,12 +19,7 @@
   z-index: 1;
 }
 
-#leftnav {
-    float:left;
-}
-
 .nav .active {
-  /* text-decoration: underline; */
   font-weight: 500;
 }
 
