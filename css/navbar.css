@@ -20,7 +20,8 @@
 }
 
 .nav .active {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: 500;
 }
 
 .nav a {

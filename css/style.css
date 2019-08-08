@@ -64,12 +64,9 @@ iframe {
 
 #left-panel {
   position: fixed;
-  /* top: 0;
-  left: 0; */
   width: 30%;
   height: 100vh;
   overflow-y: scroll;
-  background-color: #fff7fc;
   border-right: 4px solid #f0dde5;
 }
 
