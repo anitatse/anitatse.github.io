@@ -10,8 +10,6 @@ iframe {
   box-sizing: border-box;
 }
 
-
-
 .header {
   font-size: 40px;
   line-height: 50px;
@@ -19,6 +17,12 @@ iframe {
   font-weight: 300;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+#header1 {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #header2 {
@@ -32,11 +36,13 @@ iframe {
   font-weight: 300;
   padding-left: 40px;
   padding-right: 40px;
-  max-width: 950px
+  max-width: 800px
 }
 
 #left-paragraph {
   max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer {
@@ -44,9 +50,7 @@ iframe {
   padding-top: 20px;
 }
 
-body {
-  background-color: #fff7fc;
-}
+
 
 .space {
   padding: 30px;
@@ -61,42 +65,41 @@ body {
 }
 
 #left-panel {
-  /* width: 30%;
-  float: left;
-  padding-top: 30px; */
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 30%;
   height: 100vh;
   overflow-y: scroll;
+  background-color: #fff7fc;
+  border-right: 4px solid #f0dde5;
 }
 
 #right-panel {
   float: right;
-  /* left: 30%; */
   width: 70%;
   height: 100%;
   overflow-y: visible;
   max-height:100vh;
-  /* width: 70%;
-  float: left;
-  padding-top: 20px; */
 }
 
-@media screen and (max-width: 500px) {
+body {
+  background-color: #fff7fc;
+}
+
+@media screen and (max-width: 800px) {
    #left-panel {
       position:relative;
       width: 100%;
       float: left;
-      overflow-y: visible;
+      overflow-y: hidden;
    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
    #right-panel {
       position:relative;
       width: 100%;
-      float:left;
+      float: left;
    }
 }

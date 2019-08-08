@@ -1,17 +1,21 @@
+
+.icon-row {
+   width: 100%;
+   padding: 30px;
+   max-width: 350px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
 img.icon {
-display: block;
-float: left;
-padding-left: 10px;
-padding-right: 10px;
+  display: block;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 img.icon:hover {
   transition: all 0.3s ease;
   position: relative;
   top: -3px;
-}
-
-.icon-row {
-   width: 100%;
-   padding: 30px;
 }

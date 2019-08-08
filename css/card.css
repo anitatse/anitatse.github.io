@@ -16,10 +16,19 @@
    height: 300px;
    width: 100%;
    padding: 0 4%;
-   margin: 0 auto;
    display: flex;
-   justify-content: center;  */
-   align-items: center;
+   justify-content: center;
+   align-items: left;
+}
+
+@media screen and (max-width: 950px) {
+   .row {
+      flex-direction: column;
+      height: 620px;
+      margin-left: auto;
+      margin-right: auto;
+      align-items:center;
+   }
 }
 
 .card {
@@ -27,6 +36,7 @@
    max-width: 400px;
    min-width: 300px;
    height: 260px;
+   min-height: 200px;
    margin: 20px;
    border-radius: 30px;
    border: 4px solid #f0dde5;
@@ -40,6 +50,7 @@
    cursor: pointer;
    transition: all 0.3s ease;
    background-size: cover;
+   float: left;
 }
 
 .card .title {
@@ -47,7 +58,6 @@
    margin: 0;
    text-align: center;
    font-size: 25px;
-   /* margin-top: 20px; */
    color: black;
    font-family: 'Sarabun', sans-serif;
    font-weight: 400;
@@ -101,11 +111,4 @@
 .card:hover .title {
   transition: all 0.3s ease;
   display:none;
-}
-
-@media screen and (max-width: 950px) {
-   .row {
-      flex-direction: column;
-      height: 300px;
-   }
 }
