@@ -12,7 +12,7 @@
 }
 
 .topnav {
-  background-color: #fff7fc;
+  background-color: #faf5f7;
   position: fixed;
   top: 0;
   width: 70%;
@@ -28,7 +28,8 @@
 }
 
 .nav:hover a {
-  color: #5e5e5e;
+  font-size: 24px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 800px) {

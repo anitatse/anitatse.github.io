@@ -14,7 +14,7 @@ img.icon {
 }
 
 img.icon:hover {
-  transition: all 0.3s ease;
   position: relative;
   top: -3px;
+  transition: all 0.3s ease;
 }

@@ -29,6 +29,11 @@ iframe {
   font-size: 36px;
 }
 
+#header1:hover {
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+
 .paragraph {
   font-size: 18px;
   line-height: 28px;
@@ -36,7 +41,11 @@ iframe {
   font-weight: 300;
   padding-left: 40px;
   padding-right: 40px;
-  max-width: 800px
+  max-width: 800px;
+}
+
+.paragraph a:hover {
+  font-weight: 500;
 }
 
 #left-paragraph {
@@ -87,7 +96,7 @@ iframe {
 }
 
 body {
-  background-color: #fff7fc;
+  background-color: #faf5f7;
 }
 
 @media screen and (max-width: 800px) {
