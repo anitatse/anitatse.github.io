@@ -80,11 +80,11 @@ html { scroll-behavior: smooth; }
 }
 
 .paragraph a {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .paragraph a:hover {
-  font-weight: 500;
+  color: #737373;
 }
 
 #left-paragraph {
