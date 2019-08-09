@@ -14,7 +14,6 @@ iframe {
   font-size: 40px;
   line-height: 50px;
   font-family: 'Encode Sans', sans-serif;
-  /* font-family: 'Sarabun', sans-serif; */
   font-weight: 500;
   padding-left: 40px;
   padding-right: 40px;
@@ -30,17 +29,42 @@ iframe {
   padding-right: 40px;
 }
 
-#header1 {
+.feature-name {
+  color: #737373;
+  font-size: 22px;
+  line-height: 22px;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.feature-name:hover {
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
+
+.feature-name a {
+  text-decoration: none;
+}
+
+#welcome1 {
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#header2 {
-  font-size: 36px;
+html { scroll-behavior: smooth; }
+
+#header1 {
+  font-size: 36px
 }
 
-#header1:hover {
+#header2 {
+  font-size: 28px;
+}
+
+#welcome1:hover {
   font-size: 42px;
   transition: all 0.3s ease;
 }
