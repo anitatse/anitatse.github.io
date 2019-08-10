@@ -19,7 +19,6 @@
    max-width: 1024px;
    height: 300px;
    width: 100%;
-   padding: 0 4%;
    display: flex;
    justify-content: center;
    align-items: left;
@@ -29,7 +28,7 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 680px) {
    .row {
       flex-direction: column;
       height: 620px;
@@ -66,7 +65,7 @@
    text-align: center;
    font-size: 25px;
    color: black;
-   font-family: 'Encode Sans', sans-serif;
+   font-family: 'Signika', sans-serif;
    font-weight: 500;
    padding-left: 10px;
    padding-right: 10px;
