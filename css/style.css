@@ -97,6 +97,19 @@ body {
   background-color: #fcfcfc;
 }
 
+#about-headshot {
+  margin-left: 0;
+  position: absolute;
+  top: 25vh;
+  min-width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+   #about-headshot {
+      left: 30%;
+   }
+}
+
 .burger {
   float: right;
   padding: 10px;
