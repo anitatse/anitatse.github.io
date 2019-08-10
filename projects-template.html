@@ -7,6 +7,7 @@
   <meta property="og:title" content="Anita Tse"/>
   <meta property="og:description" content="Anita Tse is a DevOps Engineer and CS student at UBC in Vancouver, BC."/>
   <meta property="og:image" content="https://anitatse.github.io/images/headshot.jpg"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sarabun:300,400,500&display=swap" rel="stylesheet">
@@ -15,18 +16,27 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/projects.css">
+    <script type="text/javascript" src="js/website.js"></script>
 </head>
 
 <body>
 
-  <!-- TOP NAV BAR -->
-  <div class="topnav" style="width:100%;">
-    <div class="nav" id="leftnav"><a href="index.html">Anita Tse</a></div>
-    <div class="nav"><a href="docs/AnitaTseResume2019.pdf">Resume</a></div>
-    <div class="nav"><a href="index.html#projects">Projects</a></div>
-    <div class="nav"><a href="about.html">About</a></div>
-    <div class="nav"><a href="index.html">Home</a></div>
-  </div>
+    <!-- NAVBAR -->
+    <div class="topnav" style="width:100%;">
+      <!-- hamburger menu for mobile -->
+      <a href="javascript:void(0);" class="burger" style="font-size: 20px;" onclick="mobileNavBar()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="nav" id="leftnav"><a href="index.html">Anita Tse</a></div>
+      <div id="navitems">
+        <div class="nav"><a href="docs/AnitaTseResume2019.pdf">Resume</a></div>
+        <div class="nav"><a href="index.html#projects">Projects</a></div>
+        <div class="nav"><a href="about.html">About</a></div>
+        <div class="nav"><a href="index.html">Home</a></div>
+      </div>
+
+    </div>
 
   <!-- TOP BANNER + TITLE -->
   <div class="project-banner" style="background-image: url('images/cardbackground.jpg');">

@@ -37,45 +37,26 @@
    }
 }
 
-
-/* Style the navigation menu */
-.topnav2 {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+#navitems {
+  desplay: block;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav2 #myLinks {
-  display: none;
+@media screen and (max-width: 800px) {
+    #navitems {
+    display:none;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: right;
+    overflow: hidden;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
-/* Style navigation menu links */
-.topnav2 a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav2 a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav2 a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #4CAF50;
-  color: white;
+@media screen and (max-width: 800px) {
+    .nav {
+    float:none;
+  }
 }
