@@ -11,6 +11,12 @@
     float:left;
 }
 
+@media screen and (max-width: 800px) {
+   #leftnav {
+      display: none;
+   }
+}
+
 .topnav {
   background-color: #faf5f7;
   position: fixed;

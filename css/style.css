@@ -65,6 +65,7 @@ html { scroll-behavior: smooth; }
 
 .paragraph a {
   font-weight: 500;
+  text-decoration: underline;
   color: #525252;
 }
 
