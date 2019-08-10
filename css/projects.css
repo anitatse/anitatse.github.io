@@ -40,6 +40,16 @@
     max-width: 550px;
 }
 
+#container-centered:hover #welcome1 {
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+
+#container-centered:hover .headshot {
+    width: 205px;
+    transition: all 0.3s ease;
+}
+
 #arrow {
     float:right;
 }
