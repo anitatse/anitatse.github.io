@@ -168,3 +168,15 @@ body {
       float: left;
    }
 }
+
+.burger {
+  float: right;
+  padding: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+   .burger {
+      display: block;
+   }
+}
