@@ -24,8 +24,7 @@
 }
 
 #feature-container:hover {
-     margin-left: 5px;
-     margin-right: -5px;
+     margin-right: -3px;
 }
 
 #feature-container:hover .feature-name {
@@ -46,7 +45,7 @@
 }
 
 #container-centered:hover .headshot {
-    width: 205px;
+    width: 220px;
     transition: all 0.3s ease;
 }
 
