@@ -28,7 +28,7 @@
 }
 
 #feature-container:hover .feature-name {
-    font-size: 23px;
+    font-size: 22px;
     transition: all 0.2s ease;
 }
 
