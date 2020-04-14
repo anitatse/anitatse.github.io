@@ -167,6 +167,11 @@ transition: 0.2s ease;
    .writing-name {
      float: none;
    }
+
+   .writing {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
 }
 
 .feature {
