@@ -42,23 +42,45 @@
   <div style="padding:32px;"></div>
 
   <div class="container" style="max-width:500px; padding-bottom: 0;">
-    <h1 style="text-align: center; margin-bottom: 0;">Share the Paws</h1>
-    <h4 style="text-align: center;">HTML • CSS • PHP • SQL</h4>
-    <p style="text-align: center; font-size: 16px;">April 2019</p>
+    <h1 style="text-align: center; margin-bottom: 0;">Insight UBC</h1>
+    <h4 style="text-align: center;">JavaScript • TypeScript • HTML • CSS</h4>
+    <p style="text-align: center; font-size: 16px;">December 2018</p>
   </div>
   <div class="container">
-    <h2  >Overview</h2>
-    <p >This web app was built in a group of 4 as part of a term project for the Relational Databases courses at the University of British Columbia. It is modelling a simple dog walking service, where dog owners display their dogs and volunteers can request dogs to walk. 
-      <br><br>
-      There are 2 types of users for this system, a dog walker and dog owner. Owners are able to upload their dogs. Volunteer dog walkers can browse through the selection of dogs and request a walk. Dog owners are able to accept a walk request, and leave a review once the walk is done.
+    <h2>Overview</h2>
+    <p  > InsightUBC is a full-stack web application to query real information about courses and classrooms in UBC by entering conditions directly on the UI.  It was developed in a team of 3 as part of a UBC's CPSC 310 Software Engineering course. 
+      <br><br>The backend was developed with nodeJS, Javascript and Typescript, with the Frontend using HTML/CSS and Javascript.
     </p>
-    <img class="article-image" src="../images/sharethepaws/ownerpage.png">
-    <p  id="image-caption">Dog Owner page, with registered pets shown</p>
-    <p > An example user story: Fred (dog owner) walks his dog on his way to class/work, and wants a walker to meet him there. The walker, Sally, has time between her classes to play with a dog. She takes care of Rover(dog) for an hour, until Fred finishes and repossesses the canine.</p>
-    <img class="article-image" src="../images/sharethepaws/dogs.png">
-    <p  id="image-caption">Users can browse through the entire database of pets</p>
-    <p > We implemented this in HTML/CSS and PHP, utilizing the Computer Science department's Oracle database. As this was a course focussing on the use of databases and SQL Queries with no additional marks for UI, we kept styling at a minimum to focus on the database aspect.</p>
+    <img class="article-image" src="../images/insightUBC/insightubc.png">
+    <p id="image-caption">the InsightUBC UI</p>
 
+    <h2  >Components</h2>
+    <h3  >Test Driven Development (TDD)</h3>
+    <p  >Following Test Driven Development, we wrote a test suite of black box tests on the entire system before starting any implementation. Tests were written using the Mocha Test framework with Chai Assertions.
+    </p>
+
+    <h3  >Parsing Datasets</h3>
+    <p  >Our course data was taken from UBC PAIR in JSON format and our room data was taken from the UBC Building and Classroom website (HTML), with each zip file constituting one dataset. From those zip files, we then had to parse, filter and modify the desired information before placing them into custom objects. Latitude and Longitude values are calculated from the street address, using a Geolocation API.
+    </p>
+    <img class="article-image" src="../images/insightUBC/learningspaces.png">
+    <p   id="image-caption">UBC Building and Classroom website</p>
+    <p  >As databases were not a prerequisite for this course, we were unable to use databases and instead, we saved our objects into data structures which were then written into memory.
+    </p>
+
+    <h3>Query Builder</h3>
+    <p>We built a query builder to generate and execute a query based on the conditions entered on the UI. Syntactic and Semantic Checking are performed on each query before executing them. The EBNF for the queries are shown below:
+    </p>
+    <img class="article-image" src="../images/insightUBC/ebnf.png">
+    <p id="image-caption">EBNF for the Queries</p>
+
+    <p  >With the queries structured as such:
+    </p>
+    <img class="article-image" src="../images/insightUBC/query.png">
+    <p   id="image-caption">Sample Query structure</p>
+
+    <h3  >API Endpoints and Frontend UI</h3>
+    <p  >REST Endpoints were created for our backend, which was then connected to the Frontend UI. Frontend testing was done with Karma.
+    </p>
 
   </div>
 
