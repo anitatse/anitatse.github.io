@@ -12,6 +12,14 @@
       margin-left: auto;
       margin-right: auto;
    }
+
+   #hello {
+     font-size: 34px;
+   }
+
+   #hand {
+     font-size: 34px;
+   }
 }
 
 .icon {
