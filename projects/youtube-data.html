@@ -41,12 +41,40 @@
   <div style="padding:32px;"></div>
 
   <div class="container" style="max-width:500px; padding-bottom: 0;">
-    <h1 style="text-align: center; margin-bottom: 0;">Youtube Data</h1>
+    <h1 style="text-align: center; margin-bottom: 0;">Youtube Data Visualization</h1>
     <h4 style="text-align: center;">JavaScript • D3 • HTML • CSS</h4>
     <p style="text-align: center; font-size: 16px;">April 2020</p>
   </div>
   <div class="container">
-    <p>Coming soon!</p>
+    <h2>Overview</h2>
+    <p>This data visualization was built with JavaScript and D3 to visualize the Youtube video statistics using a number of different views. This was built in a team of 3 as part of a data visualization course.
+    <br><br>
+    For a content creator looking to start a Youtube channel, they may be interested in researching the content already existing on Youtube to give them ideas on what kind of videos they should create to become popular. The popularity of videos on social media cannot simply be defined by the number of views. There are many other aspects that may determine the popularity of Youtube videos, including the number of likes, comments, and locations where said views are coming from.
+  </p>
+  <img class="article-image" src="../images/youtube/barchart.png">
+  <img class="article-image" src="../images/youtube/visualization.png">
+  <p>
+    To address this challenge, we created a visualization that can allow a viewer to easily toggle through the different factors and see how they change between the top 10 video categories from a dataset. For our project, we show numerical comparisons of the 10 categories over time, while also showing how the numbers change according to the countries where the views come from. In abstract language, we are using our visualization to explore and identify trends, and compare similarities between different quantifiers. There is a bar chart to view the overall totals for the categories for a given year, while an interactive line and bubble chart lets you explore more facets of the video data including country and change over time.
+    </p>
+
+    <h3>Data & Preprocessing</h3>
+
+    <p>
+      We used the Trending Youtube Video Statistics dataset from <a href="​https://www.kaggle.com/datasnaek/youtube-new#CAvideos.csv" target="_blank" style="text-decoration: underline;">Kaggle</a>. Each video in the dataset had 16 associated attributes that identify the video (ex. video ID), relevant dates (ex. trending + published dates), category information, and information to quantify popularity (ex. views, likes, comments). A sizable amount of preprocessing was required to filter and restructure the data in order to use it for our project. <br><br>
+</p>
+
+<h2>Visualization</h2>
+<p>
+The visualization consisted of 3 different views: There is a bar chart to view the overall totals for the categories for a given year, while a line and bubble chart lets you explore more facets of the video data including country and change over time.
+<br><br>
+The date slider beside the bar chart allows the viewer to quickly toggle between different months and see how the numbers differ between the different categories. The dropdown lets you quickly toggle between different quantifiers. As part of the line chart, the users can use a dropdown to switch between different countries to see how trends in these categories vary depending on their target audience.
+</p>
+<img class="article-image" src="../images/youtube/linking.png">
+<p>
+There is a dropdown inside a sticky header at the top of the page, which allows the viewer to toggle between the three quantifiers (likes, comments, views) across all 3 views. If you click on a country in the bubble chart, the line chart will update to the same country that was selected. Hovering over a month circle in the innovative view will trigger the corresponding dots in the line plot to be highlighted. The same behaviour occurs when hovering over a category circle in the next level.
+<br><br>
+Hovering over the bubbles and dots plotted on the line chart will show a tooltip with the total views, comments, or likes for the given point. Unfortunately, these tooltips may take a second or two to appear.
+</p>
   </div>
 
   <button style="margin-left: auto; margin-right: auto; margin-top: 20px; display:flex;" type="button" onclick="location.href='../work.html#projects';" >Back to Projects</button>
