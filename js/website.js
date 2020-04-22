@@ -12,3 +12,11 @@ function mobileNavBar() {
     y.style.height = "225px";
   }
 }
+
+
+$(window).scroll(function() {
+  var scrolledY = $(window).scrollTop();
+  console.log(scrolledY);
+  console.log('left ' + scrolledY + 'px');
+  $('#background-img').css('background-position', 'center ' + (scrolledY-190) + 'px');
+});
