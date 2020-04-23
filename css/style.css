@@ -22,15 +22,29 @@ a:hover {
   margin-top: 60px;
 }
 
+mark {
+  background-color: #FAE3E9;
+  color: black;
+}
+
 a {
     text-decoration: none;
 }
 
 p {
   font-family: 'Sarabun', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 0.32em;
   margin-bottom: 0.32em;
+}
+
+ul {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 0.4em;
 }
 
 h1 {
@@ -95,7 +109,7 @@ html { scroll-behavior: smooth; }
 
 .article-image {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
