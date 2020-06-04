@@ -10,7 +10,7 @@
 .highlight-img {
   background-color: #a2a2a2;
   height: 170px;
-  width: 245px;
+  width: 35%;
   border-radius: 24px;
   display: inline-block;
   background-size: cover;
@@ -26,13 +26,13 @@ transition: 0.2s ease;
 }
 
 .highlight-contents {
-  max-width: 460px;
+  width: 65%;
   float: right;
   display: inline-block;
   padding: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 690px) {
    .highlight {
       min-height: 340px;
    }
@@ -46,6 +46,7 @@ transition: 0.2s ease;
      float: none;
      margin-left: auto;
      margin-right: auto;
+     width: 100%;
      display: block;
    }
 }
@@ -117,7 +118,7 @@ transition: 0.2s ease;
    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 590px) {
    .experience {
       min-height: 340px;
    }
