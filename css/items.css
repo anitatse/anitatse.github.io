@@ -54,15 +54,15 @@ transition: 0.2s ease;
   background-color: #F7F7F7;
   border-radius: 22px;
   max-width: 100%;
-  min-height: 120px;
+  min-height: 125px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .experience-img {
   background-color: #a2a2a2;
-  height: 120px;
-  width: 210px;
+  height: 125px;
+  width: 30%;
   border-radius: 24px;
   display: inline-block;
   background-size: cover;
@@ -78,7 +78,7 @@ transition: 0.2s ease;
 }
 
 .experience-contents {
-  width: 490px;
+  width: 70%;
   float: right;
   display: inline-block;
   padding: 15px;
@@ -94,7 +94,30 @@ transition: 0.2s ease;
   float: left;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
+
+    .experience-contents {
+      width: 65%;
+    }
+
+    .experience-img {
+      width: 35%;
+    }
+
+   .company-line {
+     display: block;
+   }
+
+   .company-date {
+     float: none;
+   }
+
+   .company-name {
+     float: none;
+   }
+}
+
+@media screen and (max-width: 600px) {
    .experience {
       min-height: 340px;
    }
@@ -142,6 +165,7 @@ transition: 0.2s ease;
   margin-bottom: 0px;
   margin-top: 0px;
   display: block;
+  float:left;
 }
 
 .writing-line {
@@ -155,13 +179,14 @@ transition: 0.2s ease;
   height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
    .writing-line {
      display: block;
    }
 
    .writing-date {
      float: none;
+     width: 100%
    }
 
    .writing-name {
@@ -201,9 +226,8 @@ transition: 0.2s ease;
 }
 
 .row {
-   max-width: 1024px;
+   min-width: 100%;
    min-height: 200px;
-   width: 100%;
    display: flex;
    justify-content: center;
    align-items: left;
@@ -214,6 +238,7 @@ transition: 0.2s ease;
   margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 50%
 }
 
 .project .project-title {
@@ -223,8 +248,7 @@ transition: 0.2s ease;
 }
 
 .project-card {
-   width: 320px;
-   min-width: 200px;
+   width: 100%;
    min-height: 200px;
    border-radius: 20px;
    transition: all 0.3s ease;
@@ -264,7 +288,7 @@ transition: 0.2s ease;
   opacity: 0.7;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
    .row {
       flex-direction: column;
       height: 500px;
@@ -278,7 +302,7 @@ transition: 0.2s ease;
    }
 
    .project {
-     width: 100%
+     min-width: 100%;
      margin-right: 20px;
    }
 }
@@ -288,6 +312,7 @@ transition: 0.2s ease;
   margin-right: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 50%
 }
 
 .speaking .speaking-title {
@@ -297,8 +322,9 @@ transition: 0.2s ease;
 }
 
 .speaking-card {
-   width: 320px;
-   min-width: 200px;
+   /* width: 320px;
+   min-width: 200px; */
+   width: 100%;
    min-height: 130px;
    border-radius: 20px;
    transition: all 0.3s ease;
@@ -330,7 +356,7 @@ transition: 0.2s ease;
    align-items: left;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 630px) {
    .speak-row {
       flex-direction: column;
       height: 360px;
@@ -345,7 +371,7 @@ transition: 0.2s ease;
    }
 
    .speaking {
-     width: 100%
+     width: 100%;
      margin-right: 20px;
    }
 }
