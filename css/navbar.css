@@ -20,10 +20,6 @@
   font-weight: 300;
 }
 
-.nav .active {
-  font-weight: 500;
-}
-
 .nav a {
   text-decoration: none;
 }
@@ -34,6 +30,41 @@
 
 .burger {
   display:none;
+}
+
+nav {
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.3s ease;
+  position: fixed;
+  top: 80px;
+  margin: 0.5rem 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Inconsolata', monospace;
+  color: #6B6B6B;
+}
+
+nav ul li {
+  margin-bottom: 0.2rem;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li a.current {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
