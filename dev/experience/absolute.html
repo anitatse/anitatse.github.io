@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<mark><!DOCTYPE html>
 <head>
-  <title>UBC TA — Anita Tse</title>
+  <title>Absolute Software — Anita Tse</title>
   <link rel="icon" href="../images/icons/favicon.png">
   <meta name="viewport" content= "width=device-width, user-scalable=no">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:title" content="UBC TA — Anita Tse"/>
+  <meta property="og:title" content="Absolute Software — Anita Tse"/>
   <meta property="og:description" content="Anita Tse is an SDE at Amazon Web Services and a UBC Computer Science alumni based in Vancouver, BC."/>
-  <meta property="og:image" content="https://anitatse.github.io/images/headshot.jpg"/>
+  <meta property="og:image" content="https://anitatse.github.io/dev/images/headshot.jpg"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
@@ -41,37 +41,27 @@
   <div style="padding:32px;"></div>
 
   <div class="container" style="max-width:500px; padding-bottom: 0;">
-    <h1 style="text-align: center; margin-bottom: 0;">University of British Columbia</h1>
-    <h4 style="text-align: center;">September - December 2017</h4>
+    <h1 style="text-align: center; margin-bottom: 0;">Absolute Software Corporation</h1>
+    <h4 style="text-align: center;">May - December 2019</h4>
     <p style="text-align: center; font-size: 16px;">Vancouver, BC</p>
   </div>
   <div class="container">
     <h2>Background</h2>
     <p>
-      In September 2017, I taught one semester of
-      <a style="text-decoration: underline;" href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=110" target="_blank">CPSC 110 (Computation, Programs, and Programming)</a>
-      at the
-      <a style="text-decoration: underline;" href="https://www.ubc.ca/" target="_blank">University of British Columbia</a>
-      . CPSC 110 is the required course for all computer science students and for a number of other majors including mathematics and cognitive systems. Along with these people, many others took the course as an elective or out of curiosity, and so I met a wide range of majors and skill levels while TA-ing this course.
+      On May 2019, I started an 8 month internship as an Associate Software Developer Co-op at
+      <a style="text-decoration: underline;" href="https://www.absolute.com/" target="_blank">Absolute Software Corporation</a> in Vancouver, BC.
+      <br><br>
+      Due to the nature of Absolute being a cybersecurity company, I was not able to work on the core product itself, but instead, I spent my work term implementing major enhancements and contributing to the maturation of the end-to-end testing framework. When I started my work term, the test framework was still in its early stages of development and required major changes and refactorings before it could be used by the development team.
     </p>
-    <img class="article-image" src="../images/ubc/racket.png">
+    <img class="article-image" src="../images/absolute/absolute.png">
+    <h2>Building up an automated test suite</h2>
     <p>
-      CPSC 110 was designed to put all incoming students on a level playing field for the rest of their Computer Science courses. As such, the course was taught in Racket - a functional programming language used as a platform for programming language design, computer science education, research, and more. The course covered a range of topics including:
-      </p>
-    <ul>
-      <li>Designing custom data types</li>
-      <li>List manipulation</li>
-      <li>Recursion</li>
-      <li>Helper functions</li>
-      <li>Binary search trees</li>
-      <li>Abstractions (fold, map, filter)</li>
-      <li>Search</li>
-      <li>Graphs</li>
-    </ul>
-  <h2>TA-ing for CPSC 110</h2>
-  <p>
-    As an Undergraduate Teaching Assistant, I directed weekly office hours and labs where students were to complete a problem set by the end of the 3 hour period. I also worked on the grading team that marked both the weekly assignments and exams throughout the semester.
-  </p>
+      The Absolute core product consists of one server that interacts with multiple client devices, so many of the tests involved performing operations on client devices or the <mark>SQL database</mark>, and then extracting logs from the main server.
+      I used <mark>Java</mark> and <mark>JUnit testing</mark> to implement classes and utilities that would perform these operations in a scalable and idempotent manner.
+      I then configured and set up a fleet of hardware devices to execute these automated tests upon running a <mark>Jenkins</mark> job, with the test results being published on both <mark>Confluence</mark> and <mark>Jira</mark>. 
+      <br><br>
+By the end of my work term, I <mark>doubled</mark> the number of tests in the automated test suite, established test result reporting standards and documentation, and configured the fleet of hardware devices to run the tests. I presented the final product to the rest of my development team to demonstrate how the test framework can be used before each release.
+    </p>
 
   </div>
 

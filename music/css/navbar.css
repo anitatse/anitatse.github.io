@@ -1,0 +1,91 @@
+#topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 65px;
+    transition: all 0.2s ease;
+  }
+  
+  .nav {
+    float:right;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  #navitems {
+    display: block;
+  }
+  
+  .burger {
+    display:none;
+  }
+  
+  nav {
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s ease;
+    position: fixed;
+    top: 80px;
+    margin: 0.5rem 1.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'IBM Plex Serif', serif;
+    color: #6B6B6B;
+  }
+  
+  nav ul li {
+    margin-bottom: 0.2rem;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  nav ul li a.current {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 800px) {
+      #navitems {
+      display:none;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: right;
+      overflow: hidden;
+      width: 200px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .burger {
+      display:inline;
+    }
+    .nav {
+      float:none;
+    }
+  
+    #leftnav {
+       display: none;
+    }
+  }
+  

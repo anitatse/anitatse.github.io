@@ -94,9 +94,9 @@ transition: 0.6s ease;
 }
 
 #hello:hover ~ h1#hand {
-      -webkit-transform: rotateZ(-20deg);
-      -ms-transform: rotateZ(-20deg);
-      transform: rotateZ(-20deg);
-      transition: 0.6s ease;
-    }
+  -webkit-transform: rotateZ(-20deg);
+  -ms-transform: rotateZ(-20deg);
+  transform: rotateZ(-20deg);
+  transition: 0.6s ease;
 }
+

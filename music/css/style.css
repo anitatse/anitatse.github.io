@@ -1,0 +1,137 @@
+body {
+    background-color: #E3DEF8;
+    background-image: url("../images/background.svg");
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Mallanna', sans-serif;
+    color: #6D4578;
+    margin-top: 1em; 
+    margin-bottom: 1em;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Mallanna', sans-serif;
+    color: #6D4578;
+}
+
+h3 {
+    font-family: 'Mallanna', sans-serif;
+    color: #6D4578;
+}
+
+p {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1.1em;
+}
+
+ul {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #4C2F53;
+}
+
+a:hover {
+    color: #7F518C;
+  }
+
+.icon {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 1;
+    transition: 0.2s ease;
+  }
+  
+  img.icon:hover {
+    opacity: 0.65;
+    transition: 0.2s ease;
+  }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+footer {
+    width: 100%;
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+  }
+
+@media screen and (max-width: 900px) {
+    .parallax {
+        background-position: 80% 50%;
+        min-height: 650px;
+    }
+}
+
+#about-landing {
+    min-height: 420px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .parallax {
+        background-position: 80% 50%;
+        min-height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .parallax {
+        background-position: 80% 50%;
+        min-height: 500px;
+    }
+
+    #about-landing {
+        min-height: 420px; 
+        display: block; 
+        padding-bottom: 0;
+        justify-content: normal; 
+    }
+}
+
+/* Start https://www.cursors-4u.com */ 
+* {
+    cursor: url(https://cur.cursors-4u.net/others/oth-4/oth374.cur), auto !important;
+} 
+
+
+
