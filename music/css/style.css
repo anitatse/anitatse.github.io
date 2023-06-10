@@ -47,14 +47,16 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    font-weight: 500;
     color: #4C2F53;
 }
+
+::-moz-selection { background: #CBC5E5;}
+::selection { background: #CBC5E5; }
 
 a:hover {
     color: #7F518C;
   }
+
 
 .icon {
     display: inline-block;
